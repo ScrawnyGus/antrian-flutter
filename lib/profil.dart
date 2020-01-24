@@ -15,10 +15,69 @@ class _ProfilState extends State<Profil> {
       appBar: PlatformAppBar(
         title: Text("Profil"),
       ),
-      body: Center(
-        child: PlatformButton(
-          onPressed: logout,
-          child: Text('Logout'),
+      body: Container(
+        height: 600,
+        color: Colors.white,
+        child: SingleChildScrollView(
+          child: Column(
+            children: <Widget>[
+              Container(
+                margin: EdgeInsets.only(top: 20.0),
+                child: Column(
+                  children: <Widget>[
+                    Image.asset('assets/images/logo.png',
+                        width: 100.0, height: 100.0, fit: BoxFit.fitHeight),
+                  ],
+                ),
+              ),
+              Container(
+                height: 120.0,
+                child: Container(
+                  padding: EdgeInsets.only(top: 10.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
+                      Container(
+                        margin: EdgeInsets.only(top: 5.0, bottom: 10.0),
+                        child: Text(
+                          'Namamu',
+                          // style: heading2(),
+                          textAlign: TextAlign.left,
+                        ),
+                      ),
+                      Text(
+                        'emailmu@mail.com',
+                        // style: normalstyle(),
+                        textAlign: TextAlign.left,
+                      ),
+                      Text(
+                        '+62 123 456 789',
+                        // style: miringstyle(),
+                        textAlign: TextAlign.left,
+                      ),
+                      Text(
+                        'Alamatmu',
+                        // style: miringstyle(),
+                        textAlign: TextAlign.left,
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Center(
+                child: Column(
+                  children: <Widget>[
+                    Center(
+                      child: PlatformButton(
+                        onPressed: logout,
+                        child: Text('Logout'),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

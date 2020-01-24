@@ -107,7 +107,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 SizedBox(height: 15),
                 GestureDetector(
                   onTap: () {
-                    Navigator.pushNamed(context, '/RegisterScreen');
+                    Navigator.pushNamed(context, '/HomeScreen'); //AKU RUBAH BIAR NGGALOGIN, BELUM ADA XAMPP AWOAOWKWOKWOKAO
                   },
                   child: Text('Register'),
                 )
@@ -193,11 +193,11 @@ class _LoggedInState extends State<LoggedIn> {
                 iosIcon: Icon(
                   CupertinoIcons.home,
                   size: 28.0,
-                  color: Colors.purple,
+                  color: Colors.blueAccent,
                 ),
                 androidIcon: Icon(
                   Icons.home,
-                  color: Colors.purple,
+                  color: Colors.blueAccent,
                 )),
             title: Text('Beranda'),
           ),
@@ -212,11 +212,11 @@ class _LoggedInState extends State<LoggedIn> {
                 iosIcon: Icon(
                   Icons.list,
                   size: 28.0,
-                  color: Colors.purple,
+                  color: Colors.blueAccent,
                 ),
                 androidIcon: Icon(
                   Icons.list,
-                  color: Colors.purple,
+                  color: Colors.blueAccent,
                 )),
             title: Text('Antreanku'),
           ),
@@ -231,11 +231,11 @@ class _LoggedInState extends State<LoggedIn> {
                 iosIcon: Icon(
                   CupertinoIcons.person,
                   size: 28.0,
-                  color: Colors.purple,
+                  color: Colors.blueAccent
                 ),
                 androidIcon: Icon(
                   Icons.person,
-                  color: Colors.purple,
+                  color: Colors.blueAccent,
                 )),
             title: Text('Profil'),
           ),

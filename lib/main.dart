@@ -6,7 +6,6 @@ import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
 
 import 'login.dart';
 import 'home.dart';
-import 'register.dart';
 
 void main() => runApp(MyApp());
 
@@ -16,14 +15,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final themeData = new ThemeData(
-      primarySwatch: Colors.purple,
+      primarySwatch: Colors.blue,
     );
 
     final cupertinoTheme = new CupertinoThemeData(
-      primaryColor: Colors.purple,
+      primaryColor: Colors.blue,
     );
     final cupertinoDarkTheme = new CupertinoThemeData(
-      primaryColor: Colors.cyan,
+      primaryColor: Colors.blue,
       brightness: Brightness.dark,
     );
 

@@ -35,34 +35,37 @@ class _DetailAntreanState extends State<DetailAntrean> {
       appBar: PlatformAppBar(
         title: Text(widget.title),
       ),
-      body: Center(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'STMIK STIKOM Indonesia',
-              style: TextStyle(fontSize: 26),
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            Text(
-              'Perpustakaan',
-              style: TextStyle(fontSize: 18),
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            FlutterLogo(
-              size: 100,
-            ),
-            Text('Antrean Saat Ini'),
-            Text('10/100'),
-            PlatformButton(
-              onPressed: () => _showDialog(),
-              child: PlatformText('Ambil Antrean'),
-            )
-          ],
+      body: Container(
+        padding: EdgeInsets.all(20),
+        child: Center(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Text(
+                'STMIK STIKOM Indonesia',
+                style: TextStyle(fontSize: 26),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Text(
+                'Perpustakaan',
+                style: TextStyle(fontSize: 18),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              FlutterLogo(
+                size: 100,
+              ),
+              Text('Antrean Saat Ini'),
+              Text('10/100'),
+              PlatformButton(
+                onPressed: () => _showDialog(),
+                child: PlatformText('Ambil Antrean'),
+              )
+            ],
+          ),
         ),
       ),
     );
